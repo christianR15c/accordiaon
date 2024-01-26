@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Accordion from './components/Accordion';
+
+const faqs = [
+  {
+    title: 'Where are these chairs assembled',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laborum facere illo, dolorem, voluptates, praesentium nihil fugiat aspernatur modi nam voluptate quasi sunt tempore cupiditate atque quam! Neque, dolor a',
+  },
+  {
+    title: 'How long do I have to return my chair?',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laborum facere illo, dolorem, voluptates, praesentium nihil fugiat aspernatur modi nam voluptate quasi sunt tempore cupiditate atque quam! Neque, dolor a',
+  },
+  {
+    title: 'Do you ship to countries outside of the United States?',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laborum facere illo, dolorem, voluptates, praesentium nihil fugiat aspernatur modi nam voluptate quasi sunt tempore cupiditate atque quam! Neque, dolor a',
+  },
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Accordion data={faqs} />
     </div>
   );
 }
